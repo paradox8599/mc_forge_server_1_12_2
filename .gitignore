@@ -1,3 +1,8 @@
 config
 mods
 world
+logs
+crash-reports
+luckperms
+nucleus
+WorldBackup

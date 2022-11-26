@@ -1,5 +1,5 @@
 services:
-  server:
+  app:
     build: .
     ports:
       - 25565:25565
@@ -9,3 +9,11 @@ services:
       - ./config:/root/mc/config
       - ./world:/root/mc/world
       - ./server.properties:/root/mc/server.properties
+      - ./start.sh:/root/mc/start.sh
+      - ./logs:/root/mc/logs
+      - ./crash-reports:/root/mc/crash-reports
+      - ./WorldBackup:/root/mc/WorldBackup
+      - ./luckperms:/root/mc/luckperms
+      - ./nucleus:/root/mc/nucleus
+      - ./white-list.json:/root/mc/white-list.json
+    tty: true
